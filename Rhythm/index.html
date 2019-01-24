@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rhythms</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+
+		<section class="heading">
+			<h1>Rhythm Creator</h1>
+		</section> <!-- end heading -->
+
+		<section class="parameters">
+			<button>Meter:
+				<select name="meter">
+					<option>duple</option>
+					<option>compound</option>
+				</select>	
+			</button>
+
+			<button>Beats/Measure:
+				<select name="no-measures">					
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>	
+					<option>6</option>				
+				</select>	
+			</button>
+
+			<button>Number of Measures:
+				<select name="no-measures">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>					
+				</select>	
+			</button>
+
+			<button>Note Values:
+				<select name="note-values">
+					<option>whole</option>
+					<option>half</option>
+					<option>quarter</option>
+					<option>eigth</option>
+				</select>	
+			</button>			
+		</section> <!-- end parameters -->
+
+		<section class="work-area">
+			<div class="meter">
+				<div class="meter-top">3</div>
+				<div class="meter-bottom">4</div>				
+			</div>
+			<div class="measure">
+				<div class="beat-line"></div>
+				<div class="beat-line"></div>
+				<div class="beat-line"></div>
+				<div class="beat-line"></div>
+				<div class="bar-line"></div>
+			</div>
+		</section> <!-- end work-area -->
+
+		<section class="note-choices">
+			<div>
+				<h3>Eraser</h3>
+				<img src="./Images/eraser-tiny.png">
+			</div>
+			<div>
+				<h3>Whole Note</h3>
+				<img src="./Images/whole5.png">
+			</div>
+			<div>
+				<h3>Half Note</h3>
+				<img src="./Images/half5.png">
+			</div>
+			<div>
+				<h3>Quarter Note</h3>
+				<img src="./Images/quarter5.png">
+			</div>
+			<div>
+				<h3>Eighth Notes</h3>
+				<img src="./Images/two-eighths5.png">
+			</div>
+		</section> <!-- end note-choices -->
+
+	</div> <!-- end container -->
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

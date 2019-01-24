@@ -1,0 +1,62 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+
+}
+
+.container {
+	display: grid;
+	grid-template-rows: 1fr 1fr 8fr 2fr;
+}
+
+.heading {
+	display: flex;
+	justify-content: center;
+	padding: .5em;
+	font-family: sans-serif;	
+	color: teal;
+}
+
+button {
+	background-color: teal;
+	color: white;
+}
+
+.parameters {
+	display: flex;
+	padding: 0em 10em;
+	justify-content: space-around;
+	background-color: #ccc;
+}
+
+.work-area {
+	padding-top: 2em;
+	background-color: #eee;
+}
+
+.meter {
+	margin-left: .25em;
+	font-size: 3.5rem;
+	font-weight: 700;
+}
+
+.measure {
+	display: flex;
+	margin-left: 4rem;
+}
+
+.beat-line {
+	border-bottom: 3px solid #222;
+	margin: 1em;
+	padding: 3em;
+}
+
+.bar-line {
+	border-left: 3px solid #222;
+}
+
+.note-choices {
+	display: flex;
+	justify-content: space-around;
+	background-color: #ddd;
+}
