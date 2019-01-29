@@ -36,6 +36,7 @@ button {
 
 .meter {
 	margin-left: .25em;
+	/*font-family: serif;*/
 	font-size: 3.5rem;
 	font-weight: 700;
 }
@@ -47,16 +48,34 @@ button {
 
 .beat-line {
 	border-bottom: 3px solid #222;
+	cursor: pointer;
 	margin: 1em;
 	padding: 3em;
+}
+
+.beat-line-over {
+	border-bottom: 3px dashed #222;
 }
 
 .bar-line {
 	border-left: 3px solid #222;
 }
 
-.note-choices {
+.choice-container {
 	display: flex;
+	font-family: sans-serif;
 	justify-content: space-around;
-	background-color: #ddd;
+}
+
+.choice {cursor: pointer;
+	
+}
+
+.test-object {
+	height: 25px;
+  	width: 25px;
+  	background-color: green;
+  	border-radius: 50%;
+  	display: inline-block;
+  	cursor: move
 }
