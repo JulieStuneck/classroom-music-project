@@ -1,7 +1,36 @@
 * {
 	box-sizing: border-box;
 	margin: 0;
+}
 
+.bar-line {
+	border-left: 3px solid #222;
+}
+
+.beat-line {
+	border-bottom: 3px solid #222;
+	cursor: pointer;
+	margin: 1em;
+	padding: 3em;
+}
+
+.beat-line-over {
+	border-bottom: 3px dashed #222;
+}
+
+button {
+	background-color: teal;
+	color: white;
+}
+
+.choice-container {
+	display: flex;
+	font-family: sans-serif;
+	justify-content: space-around;
+}
+
+.choice {cursor: pointer;
+	
 }
 
 .container {
@@ -17,21 +46,9 @@
 	color: teal;
 }
 
-button {
-	background-color: teal;
-	color: white;
-}
-
-.parameters {
+.measure {
 	display: flex;
-	padding: 0em 10em;
-	justify-content: space-around;
-	background-color: #ccc;
-}
-
-.work-area {
-	padding-top: 2em;
-	background-color: #eee;
+	margin-left: 4rem;
 }
 
 .meter {
@@ -41,34 +58,11 @@ button {
 	font-weight: 700;
 }
 
-.measure {
+.parameters {
 	display: flex;
-	margin-left: 4rem;
-}
-
-.beat-line {
-	border-bottom: 3px solid #222;
-	cursor: pointer;
-	margin: 1em;
-	padding: 3em;
-}
-
-.beat-line-over {
-	border-bottom: 3px dashed #222;
-}
-
-.bar-line {
-	border-left: 3px solid #222;
-}
-
-.choice-container {
-	display: flex;
-	font-family: sans-serif;
+	padding: 0em 10em;
 	justify-content: space-around;
-}
-
-.choice {cursor: pointer;
-	
+	background-color: #ccc;
 }
 
 .test-object {
@@ -78,4 +72,9 @@ button {
   	border-radius: 50%;
   	display: inline-block;
   	cursor: move
+}
+
+.work-area {
+	padding-top: 2em;
+	background-color: #eee;
 }
