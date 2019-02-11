@@ -31,6 +31,7 @@ chosen.forEach(el => {
   el.addEventListener('click', event => {
     console.log('a choice was clicked')
     copyTarget = event.target.cloneNode();
+    beatLocation = event.target.parentNode;
   })
 });
 
@@ -38,9 +39,16 @@ chosen.forEach(el => {
 beats.forEach(el => {
   el.addEventListener('click', event => {
     console.log('a beat was clicked');
+   /* if (copyTarget === '.eraser') {
+      event.target.beatLocation.removeChild('.choice');
+    }*/
+
     event.target.appendChild(copyTarget);
    })  
 })
+
+//erase a rhythm
+
 
 
 //check for children:
